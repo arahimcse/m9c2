@@ -1,4 +1,5 @@
-<div>
-   <h2>{{ $a }}</h2>
-   <p> {{ $b }} </p>
+<span class="alert-title">{{ $title }}</span>
+ 
+<div class="alert alert-danger">
+    {{ $slot }}
 </div>

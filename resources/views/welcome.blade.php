@@ -128,13 +128,14 @@
                     </div>
                 </div>
             </div>
-            @php 
-            $alertMessage = 'this is abdur rahim';
-            $msg = "error message";
-            @endphp 
-            <x-alert :message="$alertMessage" />
 
-            <x-error type="error" :message="$msg" />
+            <x-error>
+                <x-slot:title>
+                    Server Error
+                </x-slot>
+            
+                <strong>Whoops!</strong> Something went wrong!
+            </x-error>
         </div>
     </body>
 </html>

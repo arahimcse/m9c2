@@ -8,15 +8,11 @@ use Illuminate\View\Component;
 
 class Error extends Component
 {
-    public $a;
-    public $b;
     /**
      * Create a new component instance.
      */
-    public function __construct($type, $message)
+    public function __construct()
     {
-        $this->a = $type;
-        $this->b = $message;
     }
 
     /**
