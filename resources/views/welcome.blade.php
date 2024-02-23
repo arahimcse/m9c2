@@ -137,5 +137,18 @@
                 <strong>Whoops!</strong> Something went wrong!
             </x-error>
         </div>
+        
+        <!-- slot attributes -->
+        <x-tc class="shadow-sm">
+            <x-slot:heading class="font-bold">
+                Heading
+            </x-slot>
+        
+            Content
+        
+            <x-slot:footer class="text-sm">
+                Footer
+            </x-slot>
+        </x-tc>
     </body>
 </html>
