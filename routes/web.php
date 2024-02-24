@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\MyController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [MyController::class, 'index']);
+Route::get('/about', [MyController::class, 'about']);
+Route::get('/foot', [MyController::class, 'foot']);
+Route::get('/contract', [MyController::class, 'contact']);
+
 
 Route::get('/hi', function(){
     return 'Hi';

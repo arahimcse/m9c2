@@ -3,8 +3,19 @@
         <title>{{ $title ?? 'Todo Manager' }}</title>
     </head>
     <body>
-        <h1>Todos</h1>
+
+        @isset($heading)
+        {{ $heading }}
+        @endisset
+
         <hr/>
-        {{ $slot }}
+        <h1>Todos</h1>
+
+         {{ $slot }}
+
+         @isset($footer)
+        {{ $footer }}
+        @endisset
+        
     </body>
 </html>
