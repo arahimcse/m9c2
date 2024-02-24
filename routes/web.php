@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::get('/hi', function(){
     return 'Hi';
 })->middleware('throttle:3,1');
+
+Route::get('/tasks', function(){
+    return View('tasks');
+});
+
+Route::get('/layout', function(){
+    return view('child');
+});
