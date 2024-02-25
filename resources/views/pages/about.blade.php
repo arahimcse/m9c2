@@ -6,5 +6,5 @@
         <x-menu/>
     </x-slot>
 
-    <p>this is about</p>
+    <p class="bg-gray-500">this is about</p>
 </x-layout>

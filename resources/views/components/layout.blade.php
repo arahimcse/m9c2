@@ -1,6 +1,8 @@
 <html>
     <head>
         <title>{{ $title ?? 'Todo Manager' }}</title>
+
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body>
 
@@ -9,7 +11,7 @@
         @endisset
 
         <hr/>
-        <h1>Todos</h1>
+        <h1 class="bg-red-500">Todos</h1>
 
          {{ $slot }}
 
