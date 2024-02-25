@@ -30,3 +30,8 @@ Route::get('/tasks', function(){
 Route::get('/layout', function(){
     return view('child');
 });
+
+
+Route::get('/google', function(){
+    return redirect()->away('https://www.google.com');
+});

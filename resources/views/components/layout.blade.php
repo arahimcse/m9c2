@@ -11,7 +11,7 @@
         @endisset
 
         <hr/>
-        <h1 class="bg-red-500">Todos</h1>
+        <h1 class="bg-red-500 text-3xl">Todos</h1>
 
          {{ $slot }}
 
